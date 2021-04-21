@@ -8,24 +8,51 @@ Design tests for Analytics functionality on a Battery Monitoring System.
 
 After reading the entire document i have understood this system the following way:
 
-    Server
-----------------
-			**				   						
-Jan.csv			-------------------------							**	
-Feb.csv			| Internal DataStructure |	    **					         ----------------------------- 
-.		 ---->	| for Data processing	 | -------> Min , max , Count of breach , Trend --------> All the Data accumulated ,
-.		 input	-------------------------   input	    Logic and solution.		 input	  seperated based on analysis
-.													 -----------------------------	
-.													             |
-----------------												     |  input
-			    **					Server						    \ /
-   Notification	<------	    Notification		---------------------	**			------------------------------
-     Interface	 input	    handling	 <-------	Jan_W1.PDF	       <------ PDF file <-----	Off the shelf / External vendor
-					  input		Jan_W2.pdf		Store		output  provided PDF converter.
-								.					------------------------------
-								.
-							---------------------
+Step 1 - 
 
+Server
+----------
+Jan.csv
+Feb.csv
+.
+.
+-----------
+
+Step 2** -
+
+Fetch data and store in internal data strcuture
+
+Step 3** - 
+
+Find the min , Max , Breach no , Trend of Data.
+
+Step 4** - 
+
+After analysis all the datas and results are accumulated.
+
+Step 5 -
+
+Accumulated datas are converted in to PDF with some offthe shelf / External vendor PDF converter.
+
+Step 6** - 
+
+PDF files are stored Weekly in Server.
+
+Server
+---------------
+Jan_W1.PDF
+JAn_W2.pdf
+.
+.
+----------------
+
+Step 7** -
+
+once PDF ready then Prepare for the notification.
+
+Step 8 - 
+
+Notification Interface will hadle the notification. 
 above that the "**" marked points are our Testable code.
 Based on this understanding the following ans are provided.
 
