@@ -138,13 +138,12 @@ Consider the tests for each functionality below.
 In those tests, identify inputs and outputs.
 Enter one part that's real and another part that's faked/mocked.
 
-| Functionality            | Input        | Output                      | Faked/mocked part
-|--------------------------|--------------|-----------------------------|---
-Read input from server     | csv file     | internal data-structure     | Fake the server store
-Validate input             | csv data     | valid / invalid             | None - it's a pure function
-Notify report availability | pdf file 	  | Notification interface
-				     	     (mail etc..)               | Mock Notification function
-Report inaccessible server | server connection error	  | unable to fetch csv               | fake connection/sever not reachable code
-Find minimum and maximum   | csv file | internal data-structure to update in PDF               | None - Pure fuction to find out min max.
-Detect trend               | Csv file | update the trend in PDF               | None - Pure fuction to figure out trend.
-Write to PDF               | Internal data structure | Converted PDF               | Fake - PDF cnverter.
+| Functionality            | Input        		| Output                      			| Faked/mocked part
+|--------------------------|----------------------------|-----------------------------------------------|--
+Read input from server     | csv file     		| internal data-structure     			| Fake the server store
+Validate input             | csv data     		| valid / invalid             			| None - it's a pure function
+Notify report availability | pdf file 	  		| Notification interface(mail etc..)          	| Mock Notification function
+Report inaccessible server | server connection error	| unable to fetch csv         			| fake connection/sever not reachable code
+Find minimum and maximum   | csv file 			| internal data-structure to update in PDF      | None - Pure fuction to find out min max.
+Detect trend               | Csv file 			| update the trend in PDF               	| None - Pure fuction to figure out trend.
+Write to PDF               | Internal data structure 	| Converted PDF               			| Fake - PDF cnverter.
