@@ -117,10 +117,18 @@ Add to these tests:
 
 1. Write minimum and maximum to the PDF from a csv containing positive and negative readings
 2. Write "Invalid input" to the PDF when the csv doesn't contain expected data
-3. Storage of PDF files in the system with proper date and time.
-4. Write "Battery x reading increasing everyday / <on perticular days> from time a-b" if certain trend is noticed.
-5. Write battery no of breaches based on the battery threshold data cross in the CSV file.
-6. Sending notification to the interface when PDF is available.
+3. Correct no of Breach is calculated from the CSV file.
+4. Trend analysis/ Reading continuous increament from CSV is captured properly for the correct time.
+5. Write "Battery x reading increasing everyday / <on perticular days> from time a-b" if certain trend is noticed.
+6. Write battery no of breaches based on the battery threshold data cross in the CSV file.
+7. All the reports in PDF file are updated in proper date and time manner.
+8. PDF generator component is called with all the data in proper input format.
+9. If PDF generator tool fails then System must send notification.
+10. Proper server calls are done to store PDF in srever. 
+11. Storage of PDF files in the system with proper date and time in proper cycle time.
+12. No flse notification  call is done by the SW.
+13. Sending notification to the interface when PDF is available.
+14. If notification interface not cofigured System returns error.
 
 (add more)
 
