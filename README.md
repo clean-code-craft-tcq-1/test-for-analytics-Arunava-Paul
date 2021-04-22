@@ -66,8 +66,6 @@ Based on this understanding the following ans are provided.
 
 
 
-Fill the parts marked '_enter' in the **Tasks** section below.
-
 ## Analysis-functionality to be tested
 
 This section lists the Analysis for which _tests_ must be written.
